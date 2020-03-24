@@ -1,17 +1,13 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="false" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-  pageEncoding="UTF-8"%>
-<html>
-<meta charset="UTF-8">
-<head>
-	<title>Home</title>
-</head>
-<body>
-<h1>
-	Hello world! Success
-</h1>
+	pageEncoding="UTF-8"%>
+<jsp:include page="00_header.jsp"></jsp:include>
+<jsp:include page="10_nav.jsp"></jsp:include>
 
-<P>  The time on the server is ${serverTime}. </P>
-</body>
-</html>
+<div class="jumbotron">
+	<h1>Bootstrap Tutorial</h1>
+	<p>Bootstrap is the most popular HTML, CSS...</p>
+	<p>현재 시간은 ${serverTime } 입니다.</p>
+</div>
+
+<jsp:include page="90_footer.jsp"></jsp:include>

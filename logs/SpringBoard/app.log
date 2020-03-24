@@ -1,0 +1,360 @@
+2020-03-24 18:20:54,488 DEBUG l.debug [localhost-startStop-1] log4jdbc-logj2 properties initialization...
+2020-03-24 18:20:54,499 DEBUG l.debug [localhost-startStop-1] Using logger: net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator
+2020-03-24 18:20:54,499 DEBUG l.debug [localhost-startStop-1] x log4jdbc.debug.stack.prefix is not defined
+2020-03-24 18:20:54,499 DEBUG l.debug [localhost-startStop-1] x log4jdbc.sqltiming.warn.threshold is not defined
+2020-03-24 18:20:54,499 DEBUG l.debug [localhost-startStop-1] x log4jdbc.sqltiming.error.threshold is not defined
+2020-03-24 18:20:54,499 DEBUG l.debug [localhost-startStop-1] x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+2020-03-24 18:20:54,499 DEBUG l.debug [localhost-startStop-1] x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+2020-03-24 18:20:54,499 DEBUG l.debug [localhost-startStop-1] x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+2020-03-24 18:20:54,499 DEBUG l.debug [localhost-startStop-1] x log4jdbc.statement.warn is not defined (using default value false)
+2020-03-24 18:20:54,500 DEBUG l.debug [localhost-startStop-1] x log4jdbc.dump.sql.select is not defined (using default value true)
+2020-03-24 18:20:54,500 DEBUG l.debug [localhost-startStop-1] x log4jdbc.dump.sql.insert is not defined (using default value true)
+2020-03-24 18:20:54,500 DEBUG l.debug [localhost-startStop-1] x log4jdbc.dump.sql.update is not defined (using default value true)
+2020-03-24 18:20:54,500 DEBUG l.debug [localhost-startStop-1] x log4jdbc.dump.sql.delete is not defined (using default value true)
+2020-03-24 18:20:54,500 DEBUG l.debug [localhost-startStop-1] x log4jdbc.dump.sql.create is not defined (using default value true)
+2020-03-24 18:20:54,500 DEBUG l.debug [localhost-startStop-1] x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+2020-03-24 18:20:54,500 DEBUG l.debug [localhost-startStop-1] x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+2020-03-24 18:20:54,500 DEBUG l.debug [localhost-startStop-1] x log4jdbc.drivers is not defined
+2020-03-24 18:20:54,500 DEBUG l.debug [localhost-startStop-1] x log4jdbc.trim.sql is not defined (using default value true)
+2020-03-24 18:20:54,501 DEBUG l.debug [localhost-startStop-1] x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+2020-03-24 18:20:54,501 DEBUG l.debug [localhost-startStop-1] x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+2020-03-24 18:20:54,501 DEBUG l.debug [localhost-startStop-1] log4jdbc-logj2 properties initialization done.
+2020-03-24 18:20:54,501 DEBUG l.debug [localhost-startStop-1] DriverSpy intialization...
+2020-03-24 18:20:54,510 DEBUG l.debug [localhost-startStop-1]   FOUND DRIVER com.mysql.jdbc.Driver
+2020-03-24 18:20:54,553 DEBUG l.debug [localhost-startStop-1]   FOUND DRIVER oracle.jdbc.OracleDriver
+2020-03-24 18:20:54,553 DEBUG l.debug [localhost-startStop-1]   FOUND DRIVER oracle.jdbc.driver.OracleDriver
+2020-03-24 18:20:54,561 DEBUG l.debug [localhost-startStop-1] DriverSpy intialization done.
+2020-03-24 18:20:54,576 DEBUG o.a.i.l.LogFactory [localhost-startStop-1] Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-03-24 18:20:54,722 DEBUG o.m.s.SqlSessionFactoryBean [localhost-startStop-1] Parsed configuration file: 'class path resource [MybatisConfig.xml]'
+2020-03-24 18:20:54,830 DEBUG o.m.s.SqlSessionFactoryBean [localhost-startStop-1] Parsed mapper file: 'file [C:\_spring\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\SpringBoard_02_Basic\WEB-INF\classes\mappers\productMapper.xml]'
+2020-03-24 18:21:09,016 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-6] Creating a new SqlSession
+2020-03-24 18:21:09,027 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-6] SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c88b2b] was not registered for synchronization because synchronization is not active
+2020-03-24 18:21:09,301 INFO j.connection [http-nio-8081-exec-6] 1. Connection opened  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:21:09,301 DEBUG j.connection [http-nio-8081-exec-6] open connections:  1 (1)
+2020-03-24 18:21:09,301 DEBUG j.audit [http-nio-8081-exec-6] 1. Connection.new Connection returned   com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:21:09,302 DEBUG j.audit [http-nio-8081-exec-6] 1. Connection.isReadOnly() returned false  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+2020-03-24 18:21:09,302 DEBUG j.audit [http-nio-8081-exec-6] 1. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2020-03-24 18:21:09,305 DEBUG j.audit [http-nio-8081-exec-6] 1. Connection.isValid(1) returned true  com.zaxxer.hikari.pool.PoolBase.checkValidationSupport(PoolBase.java:454)
+2020-03-24 18:21:09,305 DEBUG j.audit [http-nio-8081-exec-6] 1. Connection.getTransactionIsolation() returned 2  com.zaxxer.hikari.pool.PoolBase.checkDefaultIsolation(PoolBase.java:475)
+2020-03-24 18:21:09,320 DEBUG j.audit [http-nio-8081-exec-6] 1. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.HikariProxyConnection.getAutoCommit(HikariProxyConnection.java:-1)
+2020-03-24 18:21:09,320 DEBUG o.m.s.t.SpringManagedTransaction [http-nio-8081-exec-6] JDBC Connection [HikariProxyConnection@120257766 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@795be8f2] will not be managed by Spring
+2020-03-24 18:21:09,328 DEBUG P.add [http-nio-8081-exec-6] ==>  Preparing: insert into tbl_product values(seq_product.nextval, ?, ?, ?, sysdate, 0, ?, sysdate) 
+2020-03-24 18:21:09,430 INFO j.connection [HikariPool-1 connection adder] 2. Connection opened  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:21:09,430 DEBUG j.connection [HikariPool-1 connection adder] open connections:  1 2 (2)
+2020-03-24 18:21:09,430 DEBUG j.audit [HikariPool-1 connection adder] 2. Connection.new Connection returned   com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:21:09,430 DEBUG j.audit [HikariPool-1 connection adder] 2. Connection.isReadOnly() returned false  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+2020-03-24 18:21:09,431 DEBUG j.audit [HikariPool-1 connection adder] 2. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2020-03-24 18:21:09,454 INFO j.connection [HikariPool-1 connection adder] 3. Connection opened  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:21:09,454 DEBUG j.connection [HikariPool-1 connection adder] open connections:  1 2 3 (3)
+2020-03-24 18:21:09,455 DEBUG j.audit [HikariPool-1 connection adder] 3. Connection.new Connection returned   com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:21:09,455 DEBUG j.audit [HikariPool-1 connection adder] 3. Connection.isReadOnly() returned false  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+2020-03-24 18:21:09,455 DEBUG j.audit [HikariPool-1 connection adder] 3. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2020-03-24 18:21:09,474 INFO j.connection [HikariPool-1 connection adder] 4. Connection opened  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:21:09,474 DEBUG j.connection [HikariPool-1 connection adder] open connections:  1 2 3 4 (4)
+2020-03-24 18:21:09,474 DEBUG j.audit [HikariPool-1 connection adder] 4. Connection.new Connection returned   com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:21:09,474 DEBUG j.audit [HikariPool-1 connection adder] 4. Connection.isReadOnly() returned false  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+2020-03-24 18:21:09,474 DEBUG j.audit [HikariPool-1 connection adder] 4. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2020-03-24 18:21:09,499 INFO j.connection [HikariPool-1 connection adder] 5. Connection opened  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:21:09,499 DEBUG j.connection [HikariPool-1 connection adder] open connections:  1 2 3 4 5 (5)
+2020-03-24 18:21:09,499 DEBUG j.audit [HikariPool-1 connection adder] 5. Connection.new Connection returned   com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:21:09,499 DEBUG j.audit [HikariPool-1 connection adder] 5. Connection.isReadOnly() returned false  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+2020-03-24 18:21:09,500 DEBUG j.audit [HikariPool-1 connection adder] 5. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2020-03-24 18:21:09,528 INFO j.connection [HikariPool-1 connection adder] 6. Connection opened  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:21:09,528 DEBUG j.connection [HikariPool-1 connection adder] open connections:  1 2 3 4 5 6 (6)
+2020-03-24 18:21:09,529 DEBUG j.audit [HikariPool-1 connection adder] 6. Connection.new Connection returned   com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:21:09,529 DEBUG j.audit [HikariPool-1 connection adder] 6. Connection.isReadOnly() returned false  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+2020-03-24 18:21:09,529 DEBUG j.audit [HikariPool-1 connection adder] 6. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2020-03-24 18:21:09,544 DEBUG j.audit [http-nio-8081-exec-6] 1. PreparedStatement.new PreparedStatement returned   com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:316)
+2020-03-24 18:21:09,545 DEBUG j.audit [http-nio-8081-exec-6] 1. Connection.prepareStatement(insert into tbl_product 
+	values(seq_product.nextval, ?, ?, ?, sysdate, 0, ?, sysdate)) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@579f27ea  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:316)
+2020-03-24 18:21:09,550 INFO j.connection [HikariPool-1 connection adder] 7. Connection opened  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:21:09,550 DEBUG j.connection [HikariPool-1 connection adder] open connections:  1 2 3 4 5 6 7 (7)
+2020-03-24 18:21:09,550 DEBUG j.audit [HikariPool-1 connection adder] 7. Connection.new Connection returned   com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:21:09,550 DEBUG j.audit [HikariPool-1 connection adder] 7. Connection.isReadOnly() returned false  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+2020-03-24 18:21:09,550 DEBUG j.audit [HikariPool-1 connection adder] 7. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2020-03-24 18:21:09,566 DEBUG j.audit [http-nio-8081-exec-6] 1. PreparedStatement.setString(1, "test3") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:21:09,566 DEBUG j.audit [http-nio-8081-exec-6] 1. PreparedStatement.setString(2, "test3") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:21:09,566 DEBUG j.audit [http-nio-8081-exec-6] 1. PreparedStatement.setString(3, "test3") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:21:09,566 DEBUG j.audit [http-nio-8081-exec-6] 1. PreparedStatement.setString(4, "") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:21:09,567 DEBUG P.add [http-nio-8081-exec-6] ==> Parameters: test3(String), test3(String), test3(String), (String)
+2020-03-24 18:21:09,567 DEBUG j.sqlonly [http-nio-8081-exec-6]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. insert into tbl_product values(seq_product.nextval, 'test3', 'test3', 'test3', sysdate, 0, 
+'', sysdate) 
+
+2020-03-24 18:21:09,574 INFO j.connection [HikariPool-1 connection adder] 8. Connection opened  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:21:09,575 DEBUG j.connection [HikariPool-1 connection adder] open connections:  1 2 3 4 5 6 7 8 (8)
+2020-03-24 18:21:09,575 DEBUG j.audit [HikariPool-1 connection adder] 8. Connection.new Connection returned   com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:21:09,575 DEBUG j.audit [HikariPool-1 connection adder] 8. Connection.isReadOnly() returned false  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+2020-03-24 18:21:09,575 DEBUG j.audit [HikariPool-1 connection adder] 8. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2020-03-24 18:21:09,584 DEBUG j.audit [http-nio-8081-exec-6] 1. PreparedStatement.execute() returned false  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+2020-03-24 18:21:09,584 DEBUG j.audit [http-nio-8081-exec-6] 1. PreparedStatement.getUpdateCount() returned 1  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.getUpdateCount(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:21:09,584 DEBUG P.add [http-nio-8081-exec-6] <==    Updates: 1
+2020-03-24 18:21:09,584 DEBUG j.audit [http-nio-8081-exec-6] 1. PreparedStatement.isClosed() returned false  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.isClosed(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:21:09,585 DEBUG j.audit [http-nio-8081-exec-6] 1. PreparedStatement.close() returned   com.zaxxer.hikari.pool.ProxyStatement.close(ProxyStatement.java:76)
+2020-03-24 18:21:09,585 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-6] Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c88b2b]
+2020-03-24 18:21:09,588 DEBUG j.audit [http-nio-8081-exec-6] 1. Connection.clearWarnings() returned   com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:246)
+2020-03-24 18:21:09,599 INFO j.connection [HikariPool-1 connection adder] 9. Connection opened  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:21:09,599 DEBUG j.connection [HikariPool-1 connection adder] open connections:  1 2 3 4 5 6 7 8 9 (9)
+2020-03-24 18:21:09,599 DEBUG j.audit [HikariPool-1 connection adder] 9. Connection.new Connection returned   com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:21:09,600 DEBUG j.audit [HikariPool-1 connection adder] 9. Connection.isReadOnly() returned false  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+2020-03-24 18:21:09,600 DEBUG j.audit [HikariPool-1 connection adder] 9. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2020-03-24 18:21:09,619 INFO j.connection [HikariPool-1 connection adder] 10. Connection opened  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:21:09,619 DEBUG j.connection [HikariPool-1 connection adder] open connections:  1 2 3 4 5 6 7 8 9 10 (10)
+2020-03-24 18:21:09,619 DEBUG j.audit [HikariPool-1 connection adder] 10. Connection.new Connection returned   com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:21:09,619 DEBUG j.audit [HikariPool-1 connection adder] 10. Connection.isReadOnly() returned false  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+2020-03-24 18:21:09,619 DEBUG j.audit [HikariPool-1 connection adder] 10. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2020-03-24 18:28:51,198 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-3] Creating a new SqlSession
+2020-03-24 18:28:51,198 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-3] SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16ee1179] was not registered for synchronization because synchronization is not active
+2020-03-24 18:28:51,200 DEBUG j.audit [http-nio-8081-exec-3] 1. Connection.isValid(5) returned true  com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:157)
+2020-03-24 18:28:51,200 DEBUG j.audit [http-nio-8081-exec-3] 1. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.HikariProxyConnection.getAutoCommit(HikariProxyConnection.java:-1)
+2020-03-24 18:28:51,200 DEBUG o.m.s.t.SpringManagedTransaction [http-nio-8081-exec-3] JDBC Connection [HikariProxyConnection@784977428 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@795be8f2] will not be managed by Spring
+2020-03-24 18:28:51,200 DEBUG P.add [http-nio-8081-exec-3] ==>  Preparing: insert into tbl_product values(seq_product.nextval, ?, ?, ?, sysdate, 0, ?, sysdate) 
+2020-03-24 18:28:51,200 DEBUG j.audit [http-nio-8081-exec-3] 1. PreparedStatement.new PreparedStatement returned   com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:316)
+2020-03-24 18:28:51,201 DEBUG j.audit [http-nio-8081-exec-3] 1. Connection.prepareStatement(insert into tbl_product 
+	values(seq_product.nextval, ?, ?, ?, sysdate, 0, ?, sysdate)) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@34d29079  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:316)
+2020-03-24 18:28:51,202 DEBUG j.audit [http-nio-8081-exec-3] 1. PreparedStatement.setString(1, "test4") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:28:51,202 DEBUG j.audit [http-nio-8081-exec-3] 1. PreparedStatement.setString(2, "test4") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:28:51,203 DEBUG j.audit [http-nio-8081-exec-3] 1. PreparedStatement.setString(3, "test4") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:28:51,203 DEBUG j.audit [http-nio-8081-exec-3] 1. PreparedStatement.setString(4, "") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:28:51,203 DEBUG P.add [http-nio-8081-exec-3] ==> Parameters: test4(String), test4(String), test4(String), (String)
+2020-03-24 18:28:51,203 DEBUG j.sqlonly [http-nio-8081-exec-3]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. insert into tbl_product values(seq_product.nextval, 'test4', 'test4', 'test4', sysdate, 0, 
+'', sysdate) 
+
+2020-03-24 18:28:51,205 DEBUG j.audit [http-nio-8081-exec-3] 1. PreparedStatement.execute() returned false  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+2020-03-24 18:28:51,205 DEBUG j.audit [http-nio-8081-exec-3] 1. PreparedStatement.getUpdateCount() returned 1  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.getUpdateCount(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:28:51,205 DEBUG P.add [http-nio-8081-exec-3] <==    Updates: 1
+2020-03-24 18:28:51,205 DEBUG j.audit [http-nio-8081-exec-3] 1. PreparedStatement.isClosed() returned false  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.isClosed(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:28:51,206 DEBUG j.audit [http-nio-8081-exec-3] 1. PreparedStatement.close() returned   com.zaxxer.hikari.pool.ProxyStatement.close(ProxyStatement.java:76)
+2020-03-24 18:28:51,206 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-3] Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16ee1179]
+2020-03-24 18:28:51,206 DEBUG j.audit [http-nio-8081-exec-3] 1. Connection.clearWarnings() returned   com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:246)
+2020-03-24 18:50:33,142 INFO j.connection [HikariPool-1 connection closer] 10. Connection closed  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:139)
+2020-03-24 18:50:33,142 DEBUG j.connection [HikariPool-1 connection closer] open connections:  1 2 3 4 5 6 7 8 9 (9)
+2020-03-24 18:50:33,142 DEBUG j.audit [HikariPool-1 connection closer] 10. Connection.close() returned   com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:139)
+2020-03-24 18:50:33,162 INFO j.connection [HikariPool-1 connection adder] 11. Connection opened  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:50:33,162 DEBUG j.connection [HikariPool-1 connection adder] open connections:  1 2 3 4 5 6 7 8 9 11 (10)
+2020-03-24 18:50:33,162 DEBUG j.audit [HikariPool-1 connection adder] 11. Connection.new Connection returned   com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:50:33,162 DEBUG j.audit [HikariPool-1 connection adder] 11. Connection.isReadOnly() returned false  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+2020-03-24 18:50:33,162 DEBUG j.audit [HikariPool-1 connection adder] 11. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2020-03-24 18:50:36,313 INFO j.connection [HikariPool-1 connection closer] 6. Connection closed  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:139)
+2020-03-24 18:50:36,314 DEBUG j.connection [HikariPool-1 connection closer] open connections:  1 2 3 4 5 7 8 9 11 (9)
+2020-03-24 18:50:36,315 DEBUG j.audit [HikariPool-1 connection closer] 6. Connection.close() returned   com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:139)
+2020-03-24 18:50:36,356 INFO j.connection [HikariPool-1 connection adder] 12. Connection opened  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:50:36,356 DEBUG j.connection [HikariPool-1 connection adder] open connections:  1 2 3 4 5 7 8 9 11 12 (10)
+2020-03-24 18:50:36,356 DEBUG j.audit [HikariPool-1 connection adder] 12. Connection.new Connection returned   com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:50:36,356 DEBUG j.audit [HikariPool-1 connection adder] 12. Connection.isReadOnly() returned false  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+2020-03-24 18:50:36,356 DEBUG j.audit [HikariPool-1 connection adder] 12. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2020-03-24 18:50:44,528 INFO j.connection [HikariPool-1 connection closer] 9. Connection closed  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:139)
+2020-03-24 18:50:44,528 DEBUG j.connection [HikariPool-1 connection closer] open connections:  1 2 3 4 5 7 8 11 12 (9)
+2020-03-24 18:50:44,528 DEBUG j.audit [HikariPool-1 connection closer] 9. Connection.close() returned   com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:139)
+2020-03-24 18:50:44,547 INFO j.connection [HikariPool-1 connection adder] 13. Connection opened  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:50:44,547 DEBUG j.connection [HikariPool-1 connection adder] open connections:  1 2 3 4 5 7 8 11 12 13 (10)
+2020-03-24 18:50:44,547 DEBUG j.audit [HikariPool-1 connection adder] 13. Connection.new Connection returned   com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:50:44,547 DEBUG j.audit [HikariPool-1 connection adder] 13. Connection.isReadOnly() returned false  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+2020-03-24 18:50:44,547 DEBUG j.audit [HikariPool-1 connection adder] 13. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2020-03-24 18:50:45,058 INFO j.connection [HikariPool-1 connection closer] 4. Connection closed  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:139)
+2020-03-24 18:50:45,058 DEBUG j.connection [HikariPool-1 connection closer] open connections:  1 2 3 5 7 8 11 12 13 (9)
+2020-03-24 18:50:45,058 DEBUG j.audit [HikariPool-1 connection closer] 4. Connection.close() returned   com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:139)
+2020-03-24 18:50:45,076 INFO j.connection [HikariPool-1 connection adder] 14. Connection opened  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:50:45,076 DEBUG j.connection [HikariPool-1 connection adder] open connections:  1 2 3 5 7 8 11 12 13 14 (10)
+2020-03-24 18:50:45,076 DEBUG j.audit [HikariPool-1 connection adder] 14. Connection.new Connection returned   com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:50:45,076 DEBUG j.audit [HikariPool-1 connection adder] 14. Connection.isReadOnly() returned false  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+2020-03-24 18:50:45,076 DEBUG j.audit [HikariPool-1 connection adder] 14. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2020-03-24 18:50:49,978 INFO j.connection [HikariPool-1 connection closer] 2. Connection closed  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:139)
+2020-03-24 18:50:49,978 DEBUG j.connection [HikariPool-1 connection closer] open connections:  1 3 5 7 8 11 12 13 14 (9)
+2020-03-24 18:50:49,979 DEBUG j.audit [HikariPool-1 connection closer] 2. Connection.close() returned   com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:139)
+2020-03-24 18:50:50,025 INFO j.connection [HikariPool-1 connection adder] 15. Connection opened  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:50:50,026 DEBUG j.connection [HikariPool-1 connection adder] open connections:  1 3 5 7 8 11 12 13 14 15 (10)
+2020-03-24 18:50:50,026 DEBUG j.audit [HikariPool-1 connection adder] 15. Connection.new Connection returned   com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:50:50,026 DEBUG j.audit [HikariPool-1 connection adder] 15. Connection.isReadOnly() returned false  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+2020-03-24 18:50:50,026 DEBUG j.audit [HikariPool-1 connection adder] 15. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2020-03-24 18:50:51,085 INFO j.connection [HikariPool-1 connection closer] 1. Connection closed  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:139)
+2020-03-24 18:50:51,087 DEBUG j.connection [HikariPool-1 connection closer] open connections:  3 5 7 8 11 12 13 14 15 (9)
+2020-03-24 18:50:51,087 DEBUG j.audit [HikariPool-1 connection closer] 1. Connection.close() returned   com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:139)
+2020-03-24 18:50:51,137 INFO j.connection [HikariPool-1 connection adder] 16. Connection opened  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:50:51,138 DEBUG j.connection [HikariPool-1 connection adder] open connections:  3 5 7 8 11 12 13 14 15 16 (10)
+2020-03-24 18:50:51,138 DEBUG j.audit [HikariPool-1 connection adder] 16. Connection.new Connection returned   com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:50:51,138 DEBUG j.audit [HikariPool-1 connection adder] 16. Connection.isReadOnly() returned false  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+2020-03-24 18:50:51,138 DEBUG j.audit [HikariPool-1 connection adder] 16. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2020-03-24 18:50:53,964 INFO j.connection [HikariPool-1 connection closer] 5. Connection closed  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:139)
+2020-03-24 18:50:53,965 DEBUG j.connection [HikariPool-1 connection closer] open connections:  3 7 8 11 12 13 14 15 16 (9)
+2020-03-24 18:50:53,966 DEBUG j.audit [HikariPool-1 connection closer] 5. Connection.close() returned   com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:139)
+2020-03-24 18:50:54,013 INFO j.connection [HikariPool-1 connection adder] 17. Connection opened  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:50:54,013 DEBUG j.connection [HikariPool-1 connection adder] open connections:  3 7 8 11 12 13 14 15 16 17 (10)
+2020-03-24 18:50:54,013 DEBUG j.audit [HikariPool-1 connection adder] 17. Connection.new Connection returned   com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:50:54,014 DEBUG j.audit [HikariPool-1 connection adder] 17. Connection.isReadOnly() returned false  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+2020-03-24 18:50:54,014 DEBUG j.audit [HikariPool-1 connection adder] 17. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2020-03-24 18:50:59,924 INFO j.connection [HikariPool-1 connection closer] 8. Connection closed  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:139)
+2020-03-24 18:50:59,924 DEBUG j.connection [HikariPool-1 connection closer] open connections:  3 7 11 12 13 14 15 16 17 (9)
+2020-03-24 18:50:59,924 DEBUG j.audit [HikariPool-1 connection closer] 8. Connection.close() returned   com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:139)
+2020-03-24 18:50:59,953 INFO j.connection [HikariPool-1 connection adder] 18. Connection opened  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:50:59,954 DEBUG j.connection [HikariPool-1 connection adder] open connections:  3 7 11 12 13 14 15 16 17 18 (10)
+2020-03-24 18:50:59,954 DEBUG j.audit [HikariPool-1 connection adder] 18. Connection.new Connection returned   com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:50:59,954 DEBUG j.audit [HikariPool-1 connection adder] 18. Connection.isReadOnly() returned false  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+2020-03-24 18:50:59,954 DEBUG j.audit [HikariPool-1 connection adder] 18. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2020-03-24 18:51:03,956 INFO j.connection [HikariPool-1 connection closer] 7. Connection closed  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:139)
+2020-03-24 18:51:03,956 DEBUG j.connection [HikariPool-1 connection closer] open connections:  3 11 12 13 14 15 16 17 18 (9)
+2020-03-24 18:51:03,956 DEBUG j.audit [HikariPool-1 connection closer] 7. Connection.close() returned   com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:139)
+2020-03-24 18:51:04,003 INFO j.connection [HikariPool-1 connection adder] 19. Connection opened  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:51:04,004 DEBUG j.connection [HikariPool-1 connection adder] open connections:  3 11 12 13 14 15 16 17 18 19 (10)
+2020-03-24 18:51:04,004 DEBUG j.audit [HikariPool-1 connection adder] 19. Connection.new Connection returned   com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:51:04,004 DEBUG j.audit [HikariPool-1 connection adder] 19. Connection.isReadOnly() returned false  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+2020-03-24 18:51:04,004 DEBUG j.audit [HikariPool-1 connection adder] 19. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2020-03-24 18:51:07,461 INFO j.connection [HikariPool-1 connection closer] 3. Connection closed  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:139)
+2020-03-24 18:51:07,462 DEBUG j.connection [HikariPool-1 connection closer] open connections:  11 12 13 14 15 16 17 18 19 (9)
+2020-03-24 18:51:07,463 DEBUG j.audit [HikariPool-1 connection closer] 3. Connection.close() returned   com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:139)
+2020-03-24 18:51:07,508 INFO j.connection [HikariPool-1 connection adder] 20. Connection opened  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:51:07,508 DEBUG j.connection [HikariPool-1 connection adder] open connections:  11 12 13 14 15 16 17 18 19 20 (10)
+2020-03-24 18:51:07,508 DEBUG j.audit [HikariPool-1 connection adder] 20. Connection.new Connection returned   com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2020-03-24 18:51:07,508 DEBUG j.audit [HikariPool-1 connection adder] 20. Connection.isReadOnly() returned false  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:398)
+2020-03-24 18:51:07,508 DEBUG j.audit [HikariPool-1 connection adder] 20. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2020-03-24 18:51:48,105 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-4] Creating a new SqlSession
+2020-03-24 18:51:48,105 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-4] SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ae99886] was not registered for synchronization because synchronization is not active
+2020-03-24 18:51:48,106 DEBUG j.audit [http-nio-8081-exec-4] 11. Connection.isValid(5) returned true  com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:157)
+2020-03-24 18:51:48,106 DEBUG j.audit [http-nio-8081-exec-4] 11. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.HikariProxyConnection.getAutoCommit(HikariProxyConnection.java:-1)
+2020-03-24 18:51:48,106 DEBUG o.m.s.t.SpringManagedTransaction [http-nio-8081-exec-4] JDBC Connection [HikariProxyConnection@726058732 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@6eae5e3] will not be managed by Spring
+2020-03-24 18:51:48,106 DEBUG P.add [http-nio-8081-exec-4] ==>  Preparing: insert into tbl_product values(seq_product.nextval, ?, ?, ?, sysdate, 0, ?, sysdate) 
+2020-03-24 18:51:48,107 DEBUG j.audit [http-nio-8081-exec-4] 11. PreparedStatement.new PreparedStatement returned   com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:316)
+2020-03-24 18:51:48,107 DEBUG j.audit [http-nio-8081-exec-4] 11. Connection.prepareStatement(insert into tbl_product 
+	values(seq_product.nextval, ?, ?, ?, sysdate, 0, ?, sysdate)) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@4fc56472  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:316)
+2020-03-24 18:51:48,107 DEBUG j.audit [http-nio-8081-exec-4] 11. PreparedStatement.setString(1, "test5") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:51:48,107 DEBUG j.audit [http-nio-8081-exec-4] 11. PreparedStatement.setString(2, "test5") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:51:48,108 DEBUG j.audit [http-nio-8081-exec-4] 11. PreparedStatement.setString(3, "test5") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:51:48,108 DEBUG j.audit [http-nio-8081-exec-4] 11. PreparedStatement.setString(4, "") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:51:48,108 DEBUG P.add [http-nio-8081-exec-4] ==> Parameters: test5(String), test5(String), test5(String), (String)
+2020-03-24 18:51:48,108 DEBUG j.sqlonly [http-nio-8081-exec-4]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. insert into tbl_product values(seq_product.nextval, 'test5', 'test5', 'test5', sysdate, 0, 
+'', sysdate) 
+
+2020-03-24 18:51:48,114 DEBUG j.audit [http-nio-8081-exec-4] 11. PreparedStatement.execute() returned false  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+2020-03-24 18:51:48,115 DEBUG j.audit [http-nio-8081-exec-4] 11. PreparedStatement.getUpdateCount() returned 1  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.getUpdateCount(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:51:48,115 DEBUG P.add [http-nio-8081-exec-4] <==    Updates: 1
+2020-03-24 18:51:48,115 DEBUG j.audit [http-nio-8081-exec-4] 11. PreparedStatement.isClosed() returned false  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.isClosed(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:51:48,115 DEBUG j.audit [http-nio-8081-exec-4] 11. PreparedStatement.close() returned   com.zaxxer.hikari.pool.ProxyStatement.close(ProxyStatement.java:76)
+2020-03-24 18:51:48,115 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-4] Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ae99886]
+2020-03-24 18:51:48,115 DEBUG j.audit [http-nio-8081-exec-4] 11. Connection.clearWarnings() returned   com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:246)
+2020-03-24 18:56:00,271 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-3] Creating a new SqlSession
+2020-03-24 18:56:00,271 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-3] SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9a743e2] was not registered for synchronization because synchronization is not active
+2020-03-24 18:56:00,273 DEBUG j.audit [http-nio-8081-exec-3] 11. Connection.isValid(5) returned true  com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:157)
+2020-03-24 18:56:00,273 DEBUG j.audit [http-nio-8081-exec-3] 11. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.HikariProxyConnection.getAutoCommit(HikariProxyConnection.java:-1)
+2020-03-24 18:56:00,273 DEBUG o.m.s.t.SpringManagedTransaction [http-nio-8081-exec-3] JDBC Connection [HikariProxyConnection@1093497842 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@6eae5e3] will not be managed by Spring
+2020-03-24 18:56:00,273 DEBUG P.add [http-nio-8081-exec-3] ==>  Preparing: insert into tbl_product values(seq_product.nextval, ?, ?, ?, sysdate, 0, ?, sysdate) 
+2020-03-24 18:56:00,274 DEBUG j.audit [http-nio-8081-exec-3] 11. PreparedStatement.new PreparedStatement returned   com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:316)
+2020-03-24 18:56:00,274 DEBUG j.audit [http-nio-8081-exec-3] 11. Connection.prepareStatement(insert into tbl_product 
+	values(seq_product.nextval, ?, ?, ?, sysdate, 0, ?, sysdate)) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@724040b3  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:316)
+2020-03-24 18:56:00,275 DEBUG j.audit [http-nio-8081-exec-3] 11. PreparedStatement.setString(1, "test6") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:00,275 DEBUG j.audit [http-nio-8081-exec-3] 11. PreparedStatement.setString(2, "test6") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:00,275 DEBUG j.audit [http-nio-8081-exec-3] 11. PreparedStatement.setString(3, "test6") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:00,276 DEBUG j.audit [http-nio-8081-exec-3] 11. PreparedStatement.setString(4, "") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:00,276 DEBUG P.add [http-nio-8081-exec-3] ==> Parameters: test6(String), test6(String), test6(String), (String)
+2020-03-24 18:56:00,276 DEBUG j.sqlonly [http-nio-8081-exec-3]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. insert into tbl_product values(seq_product.nextval, 'test6', 'test6', 'test6', sysdate, 0, 
+'', sysdate) 
+
+2020-03-24 18:56:00,277 DEBUG j.audit [http-nio-8081-exec-3] 11. PreparedStatement.execute() returned false  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+2020-03-24 18:56:00,277 DEBUG j.audit [http-nio-8081-exec-3] 11. PreparedStatement.getUpdateCount() returned 1  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.getUpdateCount(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:00,277 DEBUG P.add [http-nio-8081-exec-3] <==    Updates: 1
+2020-03-24 18:56:00,277 DEBUG j.audit [http-nio-8081-exec-3] 11. PreparedStatement.isClosed() returned false  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.isClosed(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:00,278 DEBUG j.audit [http-nio-8081-exec-3] 11. PreparedStatement.close() returned   com.zaxxer.hikari.pool.ProxyStatement.close(ProxyStatement.java:76)
+2020-03-24 18:56:00,278 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-3] Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9a743e2]
+2020-03-24 18:56:00,278 DEBUG j.audit [http-nio-8081-exec-3] 11. Connection.clearWarnings() returned   com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:246)
+2020-03-24 18:56:04,630 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-5] Creating a new SqlSession
+2020-03-24 18:56:04,630 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-5] SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@313fc452] was not registered for synchronization because synchronization is not active
+2020-03-24 18:56:04,631 DEBUG j.audit [http-nio-8081-exec-5] 11. Connection.isValid(5) returned true  com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:157)
+2020-03-24 18:56:04,631 DEBUG j.audit [http-nio-8081-exec-5] 11. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.HikariProxyConnection.getAutoCommit(HikariProxyConnection.java:-1)
+2020-03-24 18:56:04,631 DEBUG o.m.s.t.SpringManagedTransaction [http-nio-8081-exec-5] JDBC Connection [HikariProxyConnection@1934447559 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@6eae5e3] will not be managed by Spring
+2020-03-24 18:56:04,632 DEBUG P.add [http-nio-8081-exec-5] ==>  Preparing: insert into tbl_product values(seq_product.nextval, ?, ?, ?, sysdate, 0, ?, sysdate) 
+2020-03-24 18:56:04,632 DEBUG j.audit [http-nio-8081-exec-5] 11. PreparedStatement.new PreparedStatement returned   com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:316)
+2020-03-24 18:56:04,632 DEBUG j.audit [http-nio-8081-exec-5] 11. Connection.prepareStatement(insert into tbl_product 
+	values(seq_product.nextval, ?, ?, ?, sysdate, 0, ?, sysdate)) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@495dfa17  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:316)
+2020-03-24 18:56:04,632 DEBUG j.audit [http-nio-8081-exec-5] 11. PreparedStatement.setString(1, "test7") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:04,633 DEBUG j.audit [http-nio-8081-exec-5] 11. PreparedStatement.setString(2, "test7") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:04,633 DEBUG j.audit [http-nio-8081-exec-5] 11. PreparedStatement.setString(3, "test7") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:04,634 DEBUG j.audit [http-nio-8081-exec-5] 11. PreparedStatement.setString(4, "") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:04,634 DEBUG P.add [http-nio-8081-exec-5] ==> Parameters: test7(String), test7(String), test7(String), (String)
+2020-03-24 18:56:04,634 DEBUG j.sqlonly [http-nio-8081-exec-5]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. insert into tbl_product values(seq_product.nextval, 'test7', 'test7', 'test7', sysdate, 0, 
+'', sysdate) 
+
+2020-03-24 18:56:04,636 DEBUG j.audit [http-nio-8081-exec-5] 11. PreparedStatement.execute() returned false  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+2020-03-24 18:56:04,636 DEBUG j.audit [http-nio-8081-exec-5] 11. PreparedStatement.getUpdateCount() returned 1  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.getUpdateCount(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:04,636 DEBUG P.add [http-nio-8081-exec-5] <==    Updates: 1
+2020-03-24 18:56:04,636 DEBUG j.audit [http-nio-8081-exec-5] 11. PreparedStatement.isClosed() returned false  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.isClosed(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:04,636 DEBUG j.audit [http-nio-8081-exec-5] 11. PreparedStatement.close() returned   com.zaxxer.hikari.pool.ProxyStatement.close(ProxyStatement.java:76)
+2020-03-24 18:56:04,636 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-5] Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@313fc452]
+2020-03-24 18:56:04,637 DEBUG j.audit [http-nio-8081-exec-5] 11. Connection.clearWarnings() returned   com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:246)
+2020-03-24 18:56:08,329 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-8] Creating a new SqlSession
+2020-03-24 18:56:08,329 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-8] SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78acc35] was not registered for synchronization because synchronization is not active
+2020-03-24 18:56:08,331 DEBUG j.audit [http-nio-8081-exec-8] 11. Connection.isValid(5) returned true  com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:157)
+2020-03-24 18:56:08,331 DEBUG j.audit [http-nio-8081-exec-8] 11. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.HikariProxyConnection.getAutoCommit(HikariProxyConnection.java:-1)
+2020-03-24 18:56:08,331 DEBUG o.m.s.t.SpringManagedTransaction [http-nio-8081-exec-8] JDBC Connection [HikariProxyConnection@62216220 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@6eae5e3] will not be managed by Spring
+2020-03-24 18:56:08,331 DEBUG P.add [http-nio-8081-exec-8] ==>  Preparing: insert into tbl_product values(seq_product.nextval, ?, ?, ?, sysdate, 0, ?, sysdate) 
+2020-03-24 18:56:08,331 DEBUG j.audit [http-nio-8081-exec-8] 11. PreparedStatement.new PreparedStatement returned   com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:316)
+2020-03-24 18:56:08,331 DEBUG j.audit [http-nio-8081-exec-8] 11. Connection.prepareStatement(insert into tbl_product 
+	values(seq_product.nextval, ?, ?, ?, sysdate, 0, ?, sysdate)) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@46b7c60e  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:316)
+2020-03-24 18:56:08,332 DEBUG j.audit [http-nio-8081-exec-8] 11. PreparedStatement.setString(1, "test8") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:08,332 DEBUG j.audit [http-nio-8081-exec-8] 11. PreparedStatement.setString(2, "test8") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:08,332 DEBUG j.audit [http-nio-8081-exec-8] 11. PreparedStatement.setString(3, "test8") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:08,332 DEBUG j.audit [http-nio-8081-exec-8] 11. PreparedStatement.setString(4, "") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:08,332 DEBUG P.add [http-nio-8081-exec-8] ==> Parameters: test8(String), test8(String), test8(String), (String)
+2020-03-24 18:56:08,332 DEBUG j.sqlonly [http-nio-8081-exec-8]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. insert into tbl_product values(seq_product.nextval, 'test8', 'test8', 'test8', sysdate, 0, 
+'', sysdate) 
+
+2020-03-24 18:56:08,334 DEBUG j.audit [http-nio-8081-exec-8] 11. PreparedStatement.execute() returned false  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+2020-03-24 18:56:08,334 DEBUG j.audit [http-nio-8081-exec-8] 11. PreparedStatement.getUpdateCount() returned 1  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.getUpdateCount(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:08,334 DEBUG P.add [http-nio-8081-exec-8] <==    Updates: 1
+2020-03-24 18:56:08,334 DEBUG j.audit [http-nio-8081-exec-8] 11. PreparedStatement.isClosed() returned false  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.isClosed(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:08,334 DEBUG j.audit [http-nio-8081-exec-8] 11. PreparedStatement.close() returned   com.zaxxer.hikari.pool.ProxyStatement.close(ProxyStatement.java:76)
+2020-03-24 18:56:08,335 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-8] Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78acc35]
+2020-03-24 18:56:08,335 DEBUG j.audit [http-nio-8081-exec-8] 11. Connection.clearWarnings() returned   com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:246)
+2020-03-24 18:56:12,214 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-10] Creating a new SqlSession
+2020-03-24 18:56:12,214 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-10] SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f7b42cd] was not registered for synchronization because synchronization is not active
+2020-03-24 18:56:12,215 DEBUG j.audit [http-nio-8081-exec-10] 11. Connection.isValid(5) returned true  com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:157)
+2020-03-24 18:56:12,216 DEBUG j.audit [http-nio-8081-exec-10] 11. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.HikariProxyConnection.getAutoCommit(HikariProxyConnection.java:-1)
+2020-03-24 18:56:12,216 DEBUG o.m.s.t.SpringManagedTransaction [http-nio-8081-exec-10] JDBC Connection [HikariProxyConnection@793765474 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@6eae5e3] will not be managed by Spring
+2020-03-24 18:56:12,216 DEBUG P.add [http-nio-8081-exec-10] ==>  Preparing: insert into tbl_product values(seq_product.nextval, ?, ?, ?, sysdate, 0, ?, sysdate) 
+2020-03-24 18:56:12,216 DEBUG j.audit [http-nio-8081-exec-10] 11. PreparedStatement.new PreparedStatement returned   com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:316)
+2020-03-24 18:56:12,216 DEBUG j.audit [http-nio-8081-exec-10] 11. Connection.prepareStatement(insert into tbl_product 
+	values(seq_product.nextval, ?, ?, ?, sysdate, 0, ?, sysdate)) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@304ce1ce  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:316)
+2020-03-24 18:56:12,217 DEBUG j.audit [http-nio-8081-exec-10] 11. PreparedStatement.setString(1, "test9") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:12,217 DEBUG j.audit [http-nio-8081-exec-10] 11. PreparedStatement.setString(2, "test9") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:12,217 DEBUG j.audit [http-nio-8081-exec-10] 11. PreparedStatement.setString(3, "test9") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:12,217 DEBUG j.audit [http-nio-8081-exec-10] 11. PreparedStatement.setString(4, "") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:12,217 DEBUG P.add [http-nio-8081-exec-10] ==> Parameters: test9(String), test9(String), test9(String), (String)
+2020-03-24 18:56:12,217 DEBUG j.sqlonly [http-nio-8081-exec-10]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. insert into tbl_product values(seq_product.nextval, 'test9', 'test9', 'test9', sysdate, 0, 
+'', sysdate) 
+
+2020-03-24 18:56:12,219 DEBUG j.audit [http-nio-8081-exec-10] 11. PreparedStatement.execute() returned false  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+2020-03-24 18:56:12,219 DEBUG j.audit [http-nio-8081-exec-10] 11. PreparedStatement.getUpdateCount() returned 1  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.getUpdateCount(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:12,219 DEBUG P.add [http-nio-8081-exec-10] <==    Updates: 1
+2020-03-24 18:56:12,219 DEBUG j.audit [http-nio-8081-exec-10] 11. PreparedStatement.isClosed() returned false  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.isClosed(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:12,219 DEBUG j.audit [http-nio-8081-exec-10] 11. PreparedStatement.close() returned   com.zaxxer.hikari.pool.ProxyStatement.close(ProxyStatement.java:76)
+2020-03-24 18:56:12,219 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-10] Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f7b42cd]
+2020-03-24 18:56:12,219 DEBUG j.audit [http-nio-8081-exec-10] 11. Connection.clearWarnings() returned   com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:246)
+2020-03-24 18:56:16,840 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-2] Creating a new SqlSession
+2020-03-24 18:56:16,840 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-2] SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3868b2a9] was not registered for synchronization because synchronization is not active
+2020-03-24 18:56:16,841 DEBUG j.audit [http-nio-8081-exec-2] 11. Connection.isValid(5) returned true  com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:157)
+2020-03-24 18:56:16,841 DEBUG j.audit [http-nio-8081-exec-2] 11. Connection.getAutoCommit() returned true  com.zaxxer.hikari.pool.HikariProxyConnection.getAutoCommit(HikariProxyConnection.java:-1)
+2020-03-24 18:56:16,841 DEBUG o.m.s.t.SpringManagedTransaction [http-nio-8081-exec-2] JDBC Connection [HikariProxyConnection@376548445 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@6eae5e3] will not be managed by Spring
+2020-03-24 18:56:16,842 DEBUG P.add [http-nio-8081-exec-2] ==>  Preparing: insert into tbl_product values(seq_product.nextval, ?, ?, ?, sysdate, 0, ?, sysdate) 
+2020-03-24 18:56:16,842 DEBUG j.audit [http-nio-8081-exec-2] 11. PreparedStatement.new PreparedStatement returned   com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:316)
+2020-03-24 18:56:16,842 DEBUG j.audit [http-nio-8081-exec-2] 11. Connection.prepareStatement(insert into tbl_product 
+	values(seq_product.nextval, ?, ?, ?, sysdate, 0, ?, sysdate)) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@746a324e  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:316)
+2020-03-24 18:56:16,842 DEBUG j.audit [http-nio-8081-exec-2] 11. PreparedStatement.setString(1, "test10") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:16,842 DEBUG j.audit [http-nio-8081-exec-2] 11. PreparedStatement.setString(2, "test10") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:16,842 DEBUG j.audit [http-nio-8081-exec-2] 11. PreparedStatement.setString(3, "test10") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:16,843 DEBUG j.audit [http-nio-8081-exec-2] 11. PreparedStatement.setString(4, "") returned   com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:16,843 DEBUG P.add [http-nio-8081-exec-2] ==> Parameters: test10(String), test10(String), test10(String), (String)
+2020-03-24 18:56:16,843 DEBUG j.sqlonly [http-nio-8081-exec-2]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. insert into tbl_product values(seq_product.nextval, 'test10', 'test10', 'test10', sysdate, 
+0, '', sysdate) 
+
+2020-03-24 18:56:16,844 DEBUG j.audit [http-nio-8081-exec-2] 11. PreparedStatement.execute() returned false  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+2020-03-24 18:56:16,844 DEBUG j.audit [http-nio-8081-exec-2] 11. PreparedStatement.getUpdateCount() returned 1  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.getUpdateCount(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:16,844 DEBUG P.add [http-nio-8081-exec-2] <==    Updates: 1
+2020-03-24 18:56:16,844 DEBUG j.audit [http-nio-8081-exec-2] 11. PreparedStatement.isClosed() returned false  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.isClosed(HikariProxyPreparedStatement.java:-1)
+2020-03-24 18:56:16,844 DEBUG j.audit [http-nio-8081-exec-2] 11. PreparedStatement.close() returned   com.zaxxer.hikari.pool.ProxyStatement.close(ProxyStatement.java:76)
+2020-03-24 18:56:16,845 DEBUG o.m.s.SqlSessionUtils [http-nio-8081-exec-2] Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3868b2a9]
+2020-03-24 18:56:16,845 DEBUG j.audit [http-nio-8081-exec-2] 11. Connection.clearWarnings() returned   com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:246)

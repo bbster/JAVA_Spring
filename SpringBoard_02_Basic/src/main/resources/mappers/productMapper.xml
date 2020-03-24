@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ProductMapper">
+<sql id="pno_cond">
+	where pno = #{pno}
+</sql>
+
+
+	<!-- CREATE -->
+	<insert id="add" parameterType="pvo">
+	insert into tbl_product 
+	values(seq_product.nextval, #{title}, #{content}, #{writer}, sysdate, 0, #{imgfile}, sysdate)
+	</insert>
+	
+	
+	<!-- READ -->
+	<select id="list" resultType="pvo">
+		select pno, title, writer, content, readcount, modd8
+		from tbl_product
+		order by pno desc
+	</select>
+	
+	<select id="detail" parameterType="java.lang.Integer" resultType="pvo">
+		select * from tbl_product <include refid="pno_cond"/>
+	</select>
+	
+	
+	<!-- UPDATE -->
+	<update id="modify" parameterType="pvo">
+		update tbl_product set
+		title = #{title}, content = #{content}, modd8 = sysdate, imgfile = #{imgfile}
+		<include refid="pno_cond"/>
+	</update>
+	
+	
+	<!-- DELETE -->
+	<delete id="remove" parameterType="java.lang.Integer">
+		delete from tbl_product <include refid="pno_cond"/>
+	</delete>
+
+</mapper>
