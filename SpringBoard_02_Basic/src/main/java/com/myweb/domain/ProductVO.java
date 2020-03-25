@@ -12,6 +12,7 @@ public class ProductVO {
 	private String imgfile;
 	
 	
+	
 	public int getPno() {
 		return pno;
 	}

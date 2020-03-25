@@ -23,6 +23,8 @@
  - module 안에 component가 있고 하나의 모듈에는 여러개의 컴포넌트가 존재한다.
  
 ### annotaion / Django decorator와 비슷
+
+### RedirectAttribute - return redirect:/domain
  
 ### Spring에서 TDD도 지원해주지만 복잡
 

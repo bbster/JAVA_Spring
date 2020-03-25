@@ -10,17 +10,17 @@
 		<label for="title">Title</label> <input type="text"
 			class="form-control" placeholder="상품명" id="title" name="title">
 	</div>
-	
+
 	<div class="form-group">
 		<label for="title">Writer</label> <input type="text"
 			class="form-control" placeholder="작성자" id="writer" name="writer">
 	</div>
-	
+
 	<div class="form-group">
 		<label for="content">Content</label>
 		<textarea class="form-control" rows="5" id="content" name="content"></textarea>
 	</div>
-	
+
 	<div class="form-group">
 		<label for="title">File</label> <input type="text"
 			class="form-control" placeholder="파일 등록" id="imgfile" name="imgfile">

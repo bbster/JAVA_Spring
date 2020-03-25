@@ -31,7 +31,7 @@ public class ProductDAOimp implements ProductDAO {
 
 	@Override
 	public ProductVO selectOne(Integer pno) {
-		return sql.selectOne(ns+"detail");
+		return sql.selectOne(ns + "detail", pno);
 	}
 
 	@Override

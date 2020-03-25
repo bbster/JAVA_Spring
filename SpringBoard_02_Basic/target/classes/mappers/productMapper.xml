@@ -5,11 +5,10 @@
 	where pno = #{pno}
 </sql>
 
-
 	<!-- CREATE -->
 	<insert id="add" parameterType="pvo">
 	insert into tbl_product 
-	values(seq_product.nextval, #{title}, #{content}, #{writer}, sysdate, 0, #{imgfile}, sysdate)
+	values(seq_product.nextval, #{title}, #{content}, #{writer}, sysdate, sysdate, 0, #{imgfile})
 	</insert>
 	
 	
@@ -21,7 +20,7 @@
 	</select>
 	
 	<select id="detail" parameterType="java.lang.Integer" resultType="pvo">
-		select * from tbl_product <include refid="pno_cond"/>
+		select * from tbl_product where pno=#{pno }
 	</select>
 	
 	
