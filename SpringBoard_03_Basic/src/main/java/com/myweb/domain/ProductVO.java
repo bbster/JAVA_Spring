@@ -1,6 +1,7 @@
 package com.myweb.domain;
 
 import java.sql.Date;
+
 public class ProductVO {
 	private int pno;
 	private String title;
@@ -11,8 +12,19 @@ public class ProductVO {
 	private int readcount;
 	private String imgfile;
 	
+	public ProductVO() {}
 	
-	
+	public ProductVO(String title, String writer, String content) {
+		this.title = title;
+		this.writer = writer;
+		this.content = content;
+	}	
+	public ProductVO(int pno, String title, String content) {
+		this.pno = pno;
+		this.title = title;
+		this.content = content;
+	}
+
 	public int getPno() {
 		return pno;
 	}
@@ -61,5 +73,4 @@ public class ProductVO {
 	public void setImgfile(String imgfile) {
 		this.imgfile = imgfile;
 	}
-
 }

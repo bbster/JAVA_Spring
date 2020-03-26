@@ -1,6 +1,6 @@
 package com.myweb.service;
-import java.util.List;
 
+import java.util.List;
 import com.myweb.domain.ProductVO;
 
 public interface ProductService {
@@ -9,8 +9,5 @@ public interface ProductService {
 	public ProductVO detail(Integer pno);
 	public void modify(ProductVO pvo);
 	public void remove(Integer pno);
-	
-	
-
+	public int removeImg(Integer pno);
 }
-

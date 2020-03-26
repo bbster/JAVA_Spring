@@ -1,6 +1,7 @@
 package com.myweb.persistence;
 
-import java.util.*;
+import java.util.List;
+
 import com.myweb.domain.ProductVO;
 
 public interface ProductDAO {
@@ -9,5 +10,5 @@ public interface ProductDAO {
 	public ProductVO selectOne(Integer pno);
 	public void update(ProductVO pvo);
 	public void delete(Integer pno);
+	public int deleteImg(Integer pno);
 }
-
