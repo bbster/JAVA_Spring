@@ -1,5 +1,6 @@
 package com.myweb.persistence;
 import java.util.List;
+import java.util.*;
 
 import javax.inject.Inject;
 
@@ -18,6 +19,7 @@ public class ProductDAOimp implements ProductDAO {
 	
 	@Inject
 	private SqlSession sql;
+	
 
 	@Override
 	public void insert(ProductVO pvo) {
@@ -42,6 +44,16 @@ public class ProductDAOimp implements ProductDAO {
 	@Override
 	public void delete(Integer pno) {
 		sql.delete(ns+"remove", pno);
+	}
+
+	@Override
+	public void removeImg(Integer pno) {
+		Map map = new HashMap();
+
+		map.put("pno", pno);
+		map.put("imgfile", "NONE");
+		sql.update(ns+"rmImg", map);
+		
 	}
 }
 
