@@ -21,29 +21,44 @@
 		<c:choose>
 			<c:when test="${list ne null && list.size() != 0 }">
 				<c:forEach items="${list }" var="pvo">
-				<tr>
-					<td>${pvo.pno }</td>
-					<td><a href="/product/detail?pno=${pvo.pno }">${pvo.title }</a></td>
-					<td>${pvo.writer }</td>
-					<td>${pvo.readcount }</td>
-					<td>${pvo.modd8 }</td>
-				</tr>
+					<tr>
+						<td>${pvo.pno }</td>
+						<td><a href="/product/detail?pno=${pvo.pno }">${pvo.title }</a></td>
+						<td>${pvo.writer }</td>
+						<td>${pvo.readcount }</td>
+						<td>${pvo.modd8 }</td>
+					</tr>
 				</c:forEach>
 			</c:when>
 			<c:otherwise>
-				<tr><td colspan="5"><h3>등록된 상품 없습니다!</h3></td></tr>
+				<tr>
+					<td colspan="5"><h3>등록된 상품 없습니다!</h3></td>
+				</tr>
 			</c:otherwise>
 		</c:choose>
 	</tbody>
 </table>
 
+<ul class="pagination">
+	<c:if test="${pgvo.prev }">
+		<li class="page-item"><a class="page-link" href="/product/list?pageNum=${pgvo.startPage-1 }&amount=${pgvo.cri.amount}">Prev</a></li>
+	</c:if>
+	<c:forEach var="i" begin="${pgvo.startPage }" end="${pgvo.endPage }">
+	<li class="page-item ${pgvo.cri.pageNum == i ? 'active' : '' }">
+	<a class="page-link" href="/product/list?pageNum=${i }&amount=${pgvo.cri.amount}">${i }</a></li>
+	</c:forEach>
+	<c:if test="${pgvo.next }">
+		<li class="page-item"><a class="page-link" href="/product/list?pageNum=${pgvo.endPage+1 }&amount=${pgvo.cri.amount}">Next</a></li>
+	</c:if>
+</ul>
+
 <script>
 	let result = '<c:out value="${result}" />';
 	if (result == 'write_ok') {
 		alert("상품 등록이 완료되었습니다~!");
-	}else if (result == 'remove_ok') {
+	} else if (result == 'remove_ok') {
 		alert("상품 삭제 완료되었습니다~!");
-	} 
+	}
 	result = "";
 </script>
 <jsp:include page="../90_footer.jsp"></jsp:include>
