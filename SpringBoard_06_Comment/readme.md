@@ -29,6 +29,11 @@
 ### HashMap DB 조인?
 
 ### @RestController url 매핑 자동으로 해줌?
+
+### ResonseEntity = ???
+
+### @GetMapping(value="/p/{pno}/{page}",produces= {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_UTF8_VALUE})
+ - value는 url을 나타내고 produces는 받아오는 것을 나타내고 consumes는 보내는 것을 의미함
  
 ### Spring에서 TDD도 지원해주지만 복잡
 

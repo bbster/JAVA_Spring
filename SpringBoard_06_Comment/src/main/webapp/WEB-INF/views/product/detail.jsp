@@ -39,7 +39,7 @@
 		<td>
 		<c:choose>
 			<c:when test="${!pvo.imgfile.equals('NONE') }">
-				<img src="/images/${pvo.imgfile }" width="33%">
+				<img src="/images/${pvo.imgfile }" class="img-thumbnail" width="43%">
 			</c:when>
 			<c:otherwise>
 				${pvo.imgfile }
@@ -57,6 +57,25 @@
 		</td>
 	</tr>
 </table>
+
+<h2>댓글</h2>
+<form>
+  <div class="input-group mb-3 input-group-lg">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="cmtWriter">${pvo.writer }</span>
+    </div>
+    <input type="text" class="form-control" id="cmtText" placeholder="댓글을 입력해주세요.">
+    
+    <div class="input-group-append">
+    <button class="btn btn-success" type="button" id="cmtSubmit">댓글달기</button>
+  	</div>
+  </div>
+</form>
+
+<ul class="list-group list-group-flush" id="cmtListULTag"></ul>
+<ul class="pagination pagination-sm justify-content-center" id="cmtListPaging">
+</ul>
+
 <form action="/product/remove" method="post" id="rmForm">
 	<input type="hidden" name="pno" value="${pvo.pno }">
 	<input type="hidden" name="imgfile" value="${pvo.imgfile }">
@@ -65,11 +84,21 @@
 	<input type="hidden" name="type" value="<c:out value='${cri.type }' />">
 	<input type="hidden" name="keyword" value="<c:out value='${cri.keyword }' />">
 </form>
+
+<script src="/resources/js/comment.js">
+
+</script>
 <script>
 	$(function() {
 		$(document).on("click", "#rmBtn", function() {
 			$("#rmForm").submit();
 		});
+		
+		var pno = '<c:out value="${pvo.pno}" />';
+		var writer = '<c:out value="${pvo.writer}" />';
+		listComment(pno, 1);
+		$(document).on("click", "#cmtSubmit", 
+				{pno: pno, writer: writer}, addComment);
 	});
 	let result = '<c:out value="${result}" />';
 	if (result == 'modify_ok') {

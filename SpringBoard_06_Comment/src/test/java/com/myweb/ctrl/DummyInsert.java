@@ -9,7 +9,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.myweb.domain.CommentVO;
 import com.myweb.domain.ProductVO;
+import com.myweb.persistence.CommentDAO;
 import com.myweb.persistence.ProductDAO;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -19,6 +21,20 @@ public class DummyInsert {
 	
 	@Inject
 	private ProductDAO pdao;
+	
+	@Inject
+	private CommentDAO cdao;
+	
+	@Test
+	public void dummyCMTTest() throws Exception{
+		for (int i = 1; i <= 256; i++) {
+			CommentVO cvo = new CommentVO();
+			cvo.setPno(248);
+			cvo.setContent(i+"번째 댓글 테스트");
+			cvo.setWriter(i+"번째 댓글 작성자");
+			cdao.insert(cvo);
+		}
+	}
 	
 	@Test
 	public void dummyTest() throws Exception{
@@ -32,25 +48,3 @@ public class DummyInsert {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
