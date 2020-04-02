@@ -6,12 +6,15 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.mvc.ServletForwardingController;
 
 import com.myweb.domain.CommentDTO;
 import com.myweb.domain.CommentVO;
@@ -25,6 +28,23 @@ public class CommentCtrl {
 	
 	@Inject
 	private CommentService csv;
+	
+	@DeleteMapping(value="/{cno}", produces="application/text; charset=utf-8")
+	public ResponseEntity<String> remove(@PathVariable("cno") int cno){
+		log.info(">>> 댓글 삭제");
+		return csv.remove(cno) == 1 ? new ResponseEntity<>(cno + "번 댓글 삭제 성공", HttpStatus.OK)
+				: new ResponseEntity<String>(HttpStatus.INTERNAL_SERVER_ERROR);
+	}
+	
+	@RequestMapping(method= {RequestMethod.PUT, RequestMethod.PATCH},
+			value="/{cno}", consumes="application/json",
+			produces= {MediaType.TEXT_PLAIN_VALUE})
+	public ResponseEntity<String> modify(@PathVariable("cno") int cno, @RequestBody CommentVO cvo){
+		log.info(">>> 댓글 수정");
+		cvo.setCno(cno);
+		return csv.modify(cvo) == 1 ? new ResponseEntity<String>("댓글이 수정 되었습니다. ", HttpStatus.OK) 
+				: new ResponseEntity<String>(HttpStatus.INTERNAL_SERVER_ERROR);
+	}
 	
 	@GetMapping(value="/p/{pno}/{page}",
 			produces= {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_UTF8_VALUE})

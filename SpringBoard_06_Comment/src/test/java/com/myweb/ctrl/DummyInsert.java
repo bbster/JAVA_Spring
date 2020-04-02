@@ -11,8 +11,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.myweb.domain.CommentVO;
 import com.myweb.domain.ProductVO;
+import com.myweb.domain.QnaVO;
 import com.myweb.persistence.CommentDAO;
 import com.myweb.persistence.ProductDAO;
+import com.myweb.persistence.QnaDAO;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations="file:src/main/webapp/WEB-INF/spring/root-context.xml")
@@ -24,6 +26,20 @@ public class DummyInsert {
 	
 	@Inject
 	private CommentDAO cdao;
+	
+	@Inject
+	private QnaDAO qdao;
+	
+	@Test
+	public void dummyQNATest() throws Exception{
+		for (int i = 0; i < 234; i++) {
+			QnaVO qvo = new QnaVO();
+			qvo.setTitle(i+"번째 문의내용");
+			qvo.setWriter("더미 작성자" +i);
+			qvo.setContent("더미 상세 내용");
+			qdao.insert(qvo);
+		}
+	}
 	
 	@Test
 	public void dummyCMTTest() throws Exception{

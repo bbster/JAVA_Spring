@@ -4,54 +4,41 @@
 <jsp:include page="../00_header.jsp"></jsp:include>
 <jsp:include page="../10_nav.jsp"></jsp:include>
 
-<h2>상품 상세 정보</h2>
+<h2>문의 상세 내용</h2>
 <table class="table table-bordered">
 	<tr>
 		<th>등록번호</th>
-		<td>${pvo.pno }</td>
+		<td>${qvo.qno }</td>
 	</tr>
 	<tr>
-		<th>상품이름</th>
-		<td>${pvo.title }</td>
+		<th>문의내용</th>
+		<td>${qvo.title }</td>
 	</tr>
 	<tr>
 		<th>등록자</th>
-		<td>${pvo.writer }</td>
+		<td>${qvo.writer }</td>
 	</tr>
 	<tr>
 		<th>조회수</th>
-		<td>${pvo.readcount }</td>
+		<td>${qvo.readcount }</td>
 	</tr>
 	<tr>
-		<th>상품등록일</th>
-		<td>${pvo.regd8 }</td>
+		<th>문의등록일</th>
+		<td>${qvo.regd8 }</td>
 	</tr>
 	<tr>
 		<th>최종수정일</th>
-		<td>${pvo.modd8 }</td>
+		<td>${qvo.modd8 }</td>
 	</tr>
 	<tr>
 		<th>상세설명</th>
-		<td>${pvo.content }</td>
-	</tr>
-	<tr>
-		<th>상품 이미지</th>
-		<td>
-		<c:choose>
-			<c:when test="${!pvo.imgfile.equals('NONE') }">
-				<img src="/images/${pvo.imgfile }" class="img-thumbnail" width="43%">
-			</c:when>
-			<c:otherwise>
-				${pvo.imgfile }
-			</c:otherwise>
-		</c:choose>
-		</td>
+		<td>${qvo.content }</td>
 	</tr>
 	<tr>
 		<td colspan="2">
-		<a href="/product/list?pageNum=${cri.pageNum }&amount=${cri.amount }&type=${cri.type }&keyword=${cri.keyword }"
+		<a href="/qna/list?pageNum=${cri.pageNum }&amount=${cri.amount }&type=${cri.type }&keyword=${cri.keyword }"
 		 class="btn btn-outline-secondary">목록</a>
-		<a href="/product/modify?pno=${pvo.pno }&pageNum=${cri.pageNum }&amount=${cri.amount }&type=${cri.type }&keyword=${cri.keyword }"
+		<a href="/qna/modify?qno=${qvo.qno }&pageNum=${cri.pageNum }&amount=${cri.amount }&type=${cri.type }&keyword=${cri.keyword }"
 			class="btn btn-outline-warning">수정</a>
 			<button type="button" class="btn btn-outline-danger" id="rmBtn">삭제</button>
 		</td>
@@ -62,7 +49,7 @@
 <form>
   <div class="input-group mb-3 input-group-lg">
     <div class="input-group-prepend">
-      <span class="input-group-text" id="cmtWriter">${pvo.writer }</span>
+      <span class="input-group-text" id="cmtWriter">${qvo.writer }</span>
     </div>
     <input type="text" class="form-control" id="cmtText" placeholder="댓글을 입력해주세요.">
     
@@ -76,9 +63,8 @@
 <ul class="pagination pagination-sm justify-content-center" id="cmtListPaging">
 </ul>
 
-<form action="/product/remove" method="post" id="rmForm">
-	<input type="hidden" name="pno" value="${pvo.pno }">
-	<input type="hidden" name="imgfile" value="${pvo.imgfile }">
+<form action="/qna/remove" method="post" id="rmForm">
+	<input type="hidden" name="qno" value="${qvo.qno }">
 	<input type="hidden" name="pageNum" value="<c:out value='${cri.pageNum }' />">
 	<input type="hidden" name="amount" value="<c:out value='${cri.amount }' />">
 	<input type="hidden" name="type" value="<c:out value='${cri.type }' />">
@@ -94,20 +80,18 @@
 			$("#rmForm").submit();
 		});
 		
-		var pno = '<c:out value="${pvo.pno}" />';
-		var writer = '<c:out value="${pvo.writer}" />';
-		listComment(pno, 1);
+		var qno = '<c:out value="${qvo.qno}" />';
+		var writer = '<c:out value="${qvo.writer}" />';
+		listComment(qno, 1);
 		$(document).on("click", "#cmtSubmit", 
-				{pno: pno, writer: writer}, addComment);
+				{qno: qno, writer: writer}, addComment);
 		$(document).on("click", "#cmtListPaging li a", function(e){
 			e.preventDefault();
 			let clickedPage = $(this).attr("href");
-			listComment(pno, clickedPage);
+			listComment(qno, clickedPage);
 		});
 	});
-	
 		var thisCno = "";
-		
 		$(document).on("click", "#modCmtBtn", function(e){
 			e.prevenDefault();
 			let thisBtn = $(this).clone();
@@ -126,26 +110,18 @@
 		    inTag += 'type="button" id="cmtModSubmit">전송</button></div></div>';
 		    
 			thisCmtTextLoc.html(inTag).trigger("create");
-			thisLI.find("#modCmtBtn").remove();
+			$("#modCmtBtn").remove();
 			});
-		
 		$(document).on("click", "#cmtModSubmit", function(e){
 			e.preventDefault();
 			modVal = $("#cmtModSubmit").val();
 			modifyComment(modVal, thisCno);
 		});
-		
-		$(document).on("click", "#delCmtBtn", function(e){
-			e.preventDefault();
-			thisLI = $(this).closest("li");
-			thisCno = thisLI/data("cno");
-			removeComment(thisCno);
-			thisLI.remove();
-		});
+	
 	
 	let result = '<c:out value="${result}" />';
 	if (result == 'modify_ok') {
-		alert("상품 수정이 완료되었습니다~!");
+		alert("문의사항 수정이 완료되었습니다~!");
 	}
 	result = "";
 </script>

@@ -6,6 +6,9 @@
   <li class="nav-item">
     <a class="nav-link" href="/product/list">Product List</a>
   </li>
+    <li class="nav-item">
+    <a class="nav-link" href="/qna/list">QnA</a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="#">Login</a>
   </li>

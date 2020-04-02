@@ -30,7 +30,7 @@
 	<!-- Update -->
 	<update id="modify" parameterType="cvo">
 		update tbl_comment set content=#{content}, modd8=sysdate
-		where con=#{cno}
+		where cno=#{cno}
 	</update>
 	
 	

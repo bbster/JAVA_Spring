@@ -1,3 +1,72 @@
+thisLI = {};
+thisBtn = {};
+modVal = "";
+
+function removeComment(thisCno){
+	$.ajax({
+		url: "/comment/" + thisCno,
+		type: "delete"
+	}).done(function(result){
+		alert(result);
+	}).fail(function(){
+		alert("댓글 삭제 실패");
+	});
+}
+
+function changeComment(){
+	$("#modInput").remove();
+	thisLI.find(".cmtText").text(modVal);
+	thisLI.find(".badge-light").after(thisBtn);
+}
+
+function modifyComment(modVal, thisCno){
+	let cno = thisCno;
+	let cmtText = modVal;
+	$.ajax({
+		url: "/comment/" + cno,
+		type: "put",
+		data: JSON.stringfy({cno: cno, content: cmtText}),
+		contentType: "application/json; charset=utf-8"
+	}).done(function(result){
+		alert(result);
+		changeComment();
+	}).fail(function(){
+		alert("댓글 수정 실패");
+	});
+};
+
+function printListPaging(cmtTotal,page){
+	let cmtListPaging = $("#cmtListPaging");
+	let pagingStr = "";
+	let pageNum = page;
+	
+	let endPage = Math.ceil(pageNum/10.0)*10;
+	let startPage = endPage-9;
+	let prev = startPage != 1;
+	let next = false;
+	
+	if(endPage*10 >= cmtTotal){
+		endPage = Math.ceil(cmtTotal/10.0);
+	}else{
+		next= true;
+	}
+	
+	if(prev){
+		pagingStr += '<li class="page-item">';
+		pagingStr += '<a class="page-link" href="'+(startPage-1)+'">Prev</a></li>';
+	}
+	for (var i = startPage; i <= endPage; i++ ){
+		let clsActive = pageNum == 1 ? 'active' : '';
+		pagingStr += '<li class="page-item ' + clsActive + '">';
+		pagingStr += '<a class="page-link" href="'+ i +'">'+ i +'</a></li>';
+	}
+	if(next){
+		pagingStr += '<li class="page-item">';
+		pagingStr += '<a class="page-link" href="'+(endPage+1)+'">Next</a></li>';
+	}
+	cmtListPaging.html(pagingStr).trigger("create");
+}
+
 function dpTime(modd8){
 	let today = new Date();
 	let mdobj = new Date(modd8);
@@ -25,6 +94,7 @@ function dpTime(modd8){
 	
 	return diff ? timeArrStr : dateArrStr + " - " + timeArrStr;
 }
+
 function printList(cmtList, cmtTotal, page){
 	if(cmtList == null || cmtList.length == 0){
 		return;
@@ -33,16 +103,18 @@ function printList(cmtList, cmtTotal, page){
 	let cmtListULTag = $("#cmtListULTag"); // html 객체(노드)를 가져옴
 	let cmtStr = "";
 	for (var i = 0; i < cmtList.length; i++) {
-		cmtStr += "<li class='list-group-item d-flex justify-content-between align-items-center'>";
+		cmtStr += "<li data-cno="+cmtList[i].cno+" class='list-group-item d-flex justify-content-between align-items-center'>";
 		cmtStr += "<span class='badge badge-secondary'>"+ cmtList[i].writer +"</span>";
 		cmtStr += "<span class='cmtText'>"+ cmtList[i].content +"</span>";
-		cmtStr += "<span class='badge badge-light'>"+ dpTime(cmtList[i].modd8) +"</span>";
+		cmtStr += "<span class='badge badge-light'>" + dpTime(cmtList[i].modd8) +"</span>";
 		cmtStr += "<button type='button' class='btn btn-outline-warning btn-sm' id='modCmtBtn'>수정</button>";
 		cmtStr += "<button type='button' class='btn btn-outline-danger btn-sm' id='delCmtBtn'>삭제</button>";
 		cmtStr += "</li>";
 	}
 	cmtListULTag.html(cmtStr).trigger("create");
+	printListPaging(cmtTotal,page);
 }
+
 function listComment(pno, page){
 	let pageNo = page > 1 ? page : 1;
 	console.log("댓글 리스트 출력");
@@ -52,6 +124,7 @@ function listComment(pno, page){
 		alert("댓글 리스트 출력 실패");
 	}); 
 }
+
 function addComment(params){   // 이벤트 핸들링으로 전송된 객체이름.data.key_name 
 	let pno = params.data.pno;
 	let writer = params.data.writer;
