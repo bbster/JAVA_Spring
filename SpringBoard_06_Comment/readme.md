@@ -2,6 +2,7 @@
 
 ## Setting
  1. java 1.8.0설치
+  - - https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html / java 1.8.0
  2. Path 경로 설정
  3. Spring
 	- https://download.springsource.com/release/STS/3.9.3.RELEASE/dist/e4.8/spring-tool-suite-3.9.3.RELEASE-e4.8.0-win32-x86_64.zip
