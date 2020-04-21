@@ -6,9 +6,11 @@
  2. Path 경로 설정
  3. Spring
 	- https://download.springsource.com/release/STS/3.9.3.RELEASE/dist/e4.8/spring-tool-suite-3.9.3.RELEASE-e4.8.0-win32-x86_64.zip
- 4. Oracle Database Express Edition (XE) Release 11.2.0.2.0
+ 4. Oracle Database Express Edition (XE) Release 11.2.0.2.0 / Database
 	- https://www.oracle.com/database/technologies/xe-prior-releases.html
- 5. dbever(DB Tool) https://dbeaver.io/files/dbeaver-ce-latest-win32.win32.x86_64.zip
+ 5. Oracle Database 11g Release 2 / Database
+	- https://www.oracle.com/kr/database/technologies/oracle-database-software-downloads.html#11g
+ 6. dbever(DB Tool) https://dbeaver.io/files/dbeaver-ce-latest-win32.win32.x86_64.zip
  
 ### Maven error
  - C:\Users\사용자\.m2\repository 에 있는 Maven관련 폴더들 삭제후 Spring프로젝트에서 MavenUpdate를 해주면 해결
